@@ -1,6 +1,14 @@
 import { app } from "@/app.ts"
 import { env } from "@/lib/env.ts"
 
+app.get('/health', async () => {
+  return {
+    status: 'ok',
+    service: "User Service",
+    timeStamp: new Date().toISOString(),
+  }
+})
+
 const start = () => {
   try {
     app.listen({
