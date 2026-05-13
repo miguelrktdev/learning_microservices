@@ -26,6 +26,9 @@ importers:
       gitmoji-cli:
         specifier: ^9.7.0
         version: 9.7.0(@types/node@25.6.0)
+      http-status-codes:
+        specifier: ^2.3.0
+        version: 2.3.0
       pg:
         specifier: ^8.20.0
         version: 8.20.0
